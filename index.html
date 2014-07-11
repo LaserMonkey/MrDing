@@ -1,92 +1,113 @@
-<!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
-  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
-
-  <title>Mrding</title>
-  <meta name="description" content="myself web">
-
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
+   <meta charset="UTF-8">
+   <title>Bootstrap 实例 - 通过 JavaScript 使用附加导航（Affix）插件</title>
+   <link href="./css/bootstrap.min.css" rel="stylesheet">
+   <script src="./js/jquery.min.js"></script>
+   <script src="./js/bootstrap.min.js"></script>
 </head>
-
 <body>
 
-  <div class="wrapper">
-    <header>
-      <h1 class="title">Mrding</h1>
-    </header>
-    <div id="container">
-      <p class="tagline">myself web</p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <a href="https://github.com/LaserMonkey/MrDing/tarball/master" class="download-button tar"><span>Download</span></a>
-          <a href="https://github.com/LaserMonkey/MrDing/zipball/master" class="download-button zip"><span>Download</span></a>
-          <a href="https://github.com/LaserMonkey/MrDing" class="code">View Mrding on GitHub</a>
-        </div>
-        <span class="blc"></span><span class="trc"></span>
-        </div>
-        <article class="markdown-body">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </article>
+<div class="container">
+   <div class="jumbotron">
+      <h1>Bootstrap 附加导航（Affix）插件</h1>
+   </div>
+   <div>
+      <div class="col-md-3">
+         <ul class="nav nav-tabs nav-stacked affix" id="myNav">
+            <li class="active"><a href="#one">教程一</a></li>
+            <li><a href="#two">教程二</a></li>
+            <li><a href="#three">教程三</a></li>
+         </ul>
       </div>
-    </div>
-    <footer>
-      <div class="owner">
-      <p><a href="https://github.com/LaserMonkey" class="avatar"><img src="https://avatars2.githubusercontent.com/u/5328377?s=60" width="48" height="48"/></a> <a href="https://github.com/LaserMonkey">LaserMonkey</a> maintains <a href="https://github.com/LaserMonkey/MrDing">Mrding</a></p>
-
-
+      <div class="col-md-9">
+         <h2 id="one">教程一</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+         Nam eu sem tempor, varius quam at, luctus dui. Mauris magna 
+         metus, dapibus nec turpis vel, semper malesuada ante. 
+         Vestibulum id metus ac nisl bibendum scelerisque non non 
+         purus. Suspendisse varius nibh non aliquet sagittis. In 
+         tincidunt orci sit amet elementum vestibulum. Vivamus 
+         fermentum in arcu in aliquam. Quisque aliquam porta odio 
+         in fringilla. Vivamus nisl leo, blandit at bibendum eu, 
+         tristique eget risus. Integer aliquet quam ut elit suscipit, 
+         id interdum neque porttitor. Integer 
+         faucibus ligula.</p>
+         <p>Vestibulum quis quam ut magna consequat faucibus. 
+         Pellentesque eget nisi a mi suscipit tincidunt. Ut tempus 
+         dictum risus. Pellentesque viverra sagittis quam at mattis. 
+         Suspendisse potenti. Aliquam sit amet gravida nibh, 
+         facilisis gravida odio. Phasellus auctor velit at lacus 
+         blandit, commodo iaculis justo  viverra. Etiam vitae est 
+         arcu. Mauris vel congue dolor. Aliquam eget mi mi. Fusce 
+         quam tortor, commodo ac dui quis, bibendum viverra erat. 
+         Maecenas mattis lectus enim, quis tincidunt dui molestie 
+         euismod. Curabitur et diam tristique, accumsan nunc eu, 
+         hendrerit tellus.</p>
+         <hr>
+         <h2 id="two">教程二</h2>
+         <p> Nullam hendrerit justo non leo aliquet imperdiet. Etiam 
+         in sagittis lectus. Suspendisse ultrices placerat accumsan. 
+         Mauris quis dapibus orci. In dapibus velit blandit pharetra 
+         tincidunt. Quisque non sapien nec lacus condimentum facilisis 
+         ut iaculis enim. Sed viverra interdum bibendum. Donec ac 
+         sollicitudin dolor. Sed fringilla vitae lacus at rutrum. 
+         Phasellus congue vestibulum ligula sed consequat.</p>
+         <p>Vestibulum consectetur scelerisque lacus, ac fermentum 
+         lorem convallis sed. Nam odio tortor, dictum quis malesuada at, 
+         pellentesque vitae orci. Vivamus elementum, felis eu auctor 
+         lobortis, diam velit egestas lacus, quis fermentum metus ante 
+         quis urna. Sed at facilisis libero. Cum sociis natoque 
+         penatibus et magnis dis parturient montes, nascetur ridiculus 
+         mus. Vestibulum bibendum blandit dolor. Nunc orci dolor, 
+         molestie nec nibh in, hendrerit tincidunt ante. Vivamus sem 
+         augue, hendrerit non sapien in, mollis ornare augue.</p>
+         <hr>
+         <h2 id="three">教程三</h2>
+         <p>Integer pulvinar leo id risus pellentesque vestibulum. 
+         Sed diam libero, sodales eget sapien vel, porttitor bibendum 
+         enim. Donec sed nibh vitae lorem porttitor blandit in nec ante. 
+         Pellentesque vitae metus ipsum. Phasellus sed nunc ac sem 
+         malesuada condimentum. Etiam in aliquam lectus. Nam vel sapien 
+         diam. Donec pharetra id arcu eget blandit. Proin imperdiet 
+         mattis augue in porttitor. Quisque tempus enim id lobortis 
+         feugiat. Suspendisse tincidunt risus quis dolor fringilla 
+         blandit. Ut sed sapien at purus lacinia porttitor. Nullam 
+         iaculis, felis a pretium ornare, dolor nisl semper tortor, vel 
+         sagittis lacus est consequat eros. Sed id pretium nisl. 
+         Curabitur dolor nisl, laoreet vitae aliquam id, tincidunt sit 
+         amet mauris. </p>
+         <p>Phasellus vitae suscipit justo. Mauris pharetra feugiat 
+         ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis 
+         luctus turpis at accumsan tincidunt. Phasellus risus risus, 
+         volutpat vel tellus ac, tincidunt fringilla massa. Etiam 
+         hendrerit dolor eget ante rutrum adipiscing. Cras interdum 
+         ipsum mattis, tempus mauris vel, semper ipsum. Duis sed dolor 
+         ut enim lobortis pellentesque ultricies ac ligula. Pellentesque 
+         convallis  elit nisi, id vulputate ipsum ullamcorper ut. Cras 
+         ac pulvinar purus, ac viverra est. Suspendisse potenti. Integer 
+         pellentesque neque et elementum tempus. Curabitur bibendum in 
+         ligula ut rhoncus.</p>
+         <p>Quisque pharetra velit id velit iaculis pretium. Nullam a
+         justo sed ligula porta semper eu quis enim. Pellentesque 
+         pellentesque, metus at facilisis hendrerit, lectus velit 
+         facilisis leo, quis volutpat turpis arcu quis enim. Nulla 
+         viverra lorem elementum interdum ultricies. Suspendisse 
+         accumsan quam nec ante mollis tempus. Morbi vel accumsan diam, 
+         eget convallis tellus. Suspendisse potenti.</p>
       </div>
-      <div class="creds">
-        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
-      </div>
-    </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/LaserMonkey/MrDing/tarball/master" class="tar">tar</a><a href="https://github.com/LaserMonkey/MrDing/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>
+   </div>
+</div>
+<script type="text/javascript">
+   $(function () {
+      $('#myNav').affix({
+         offset: {
+            top: 10 
+         }
+      });
+   });
+</script>
 
-  
 </body>
 </html>
