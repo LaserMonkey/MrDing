@@ -18,7 +18,7 @@ $(document).ready(function() {
 	// 			"position": "fixed"
 	// 		});
 	// });
-	fartscroll();
+	fartscroll(200);
 });
 
 function mainMediate() {
