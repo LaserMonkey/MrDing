@@ -61,7 +61,7 @@ ol,ul {
 }
 .log-content {
 	width: 650px;
-	height: 2000px;
+	height: 1100px;
 	background: url("../image/line-bg.png") repeat-y 138px 0;
 }
 
@@ -101,6 +101,17 @@ a:hover {
 	cursor: point;
 }
 
+li a {
+	text-decoration:none;
+	color: #a1a4b8;
+}
+li a:hover {
+	color:#58a6fb;
+	text-decoration:underline;
+	text-decoration: none;
+	cursor: point;
+}
+
 .highlight {
 	background-image: url("../image/circle-h.png");
 }
@@ -117,11 +128,12 @@ li {
 
 .date, .intro {
 	color: #ec6a13;
+	font-weight:bold;
 }
 .date {
 	font-size: 18px;
 	line-height: 32px;
-	color: #bec1d5;
+	color: #63d029;
 }
 .highlight .date{
 	color: #ec6a13;
@@ -142,6 +154,7 @@ line-height: 24px;
 
 .intro {
 	color: #63d029;
+	font-weight:bold;
 }
 .highlight .intro{
 	color: #ec6a13;
