@@ -3,13 +3,9 @@ var selfAdaption = true;
 $(document).ready(function() {
 	$(".log-content").hide();
 	mainMediate();
-	if(selfAdaption == true) {
-		$(window).resize(function(){
-			mainMediate();
-		});
-	} else {
-		$(window).unbind("resize");
-	}
+	$(window).resize(function(){
+		mainMediate();
+ 	});
 	questionMarkAnimate();
 	setInterval("questionMarkAnimate()", 1500);
 	showLog();
@@ -18,13 +14,16 @@ $(document).ready(function() {
 	// 			"position": "fixed"
 	// 		});
 	// });
-	fartscroll(200);
+	// switchList();
 });
 
 function mainMediate() {
-	$(".content").css({
-		"padding-top": ($(document).height()-25-433)/2
-	});
+	if(selfAdaption) {
+		$(".content").css({
+			"padding-top": ($(document).height()-25-433)/2,
+			"padding-bottom": ($(document).height()-25-433)/2
+		});
+	}
 }
 
 function questionMarkAnimate() {
@@ -37,7 +36,7 @@ function questionMarkAnimate() {
 
 function showLog() {
 	$(".log-button").click(function() {
-		selfAdaption == false;
+		selfAdaption = !selfAdaption;
 		$(".main-left").animate({
 			width: "300px"
 		}, 400);
@@ -53,4 +52,16 @@ function showPlanDiv() {
 		"top": -($(document).height()/2-50)
 	});
 	$(".log-content").show(400);
+}
+
+function switchList() {
+	$(".log-content .year .list").each(function (e, target) {
+	    var $target=$(target),
+	        $ul = $target.find("ul");
+	    $target.height($ul.outerHeight()), $ul.css("position", "absolute");
+	}); 
+	$(".log-content .year>h2>a").click(function (e) {
+	    e.preventDefault();
+	    $(this).parents(".year").toggleClass("close");
+	});
 }
